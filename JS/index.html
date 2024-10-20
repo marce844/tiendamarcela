@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">     
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienditas Las Marcelas</title>
+    <link rel="stylesheet" href="/CSS/STYLES.css"> <!-- Verificar la ruta del CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="/JS/script.js"></script> <!-- Verificar la ruta del JS -->
+</head>
+<body>
+    <header>
+
+        <!-- Pantalla de carga -->
+<div id="pantalla-carga">
+    <div class="logo-carga">
+        <img src="/IMG/tienditas_las_marcelas_cropped.png" alt="Logo de Los Almendros">
+    </div>
+    <div class="barra-carga">
+        <div id="progreso" class="progreso"></div>
+    </div>
+    <p id="porcentaje-carga">0%</p>
+</div>
+  
+        <div class="logo">
+            <img src="/IMG/tienditas_las_marcelas_cropped.png" alt="Logo Tienditas Las Marcelas">
+        </div>
+        <nav>
+            <ul class="menu">
+    
+                <li class="dropdown">
+                    <a href="#">Servicios</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#carne">Carnes</a></li>
+                        <li><a href="#verduras">Verduras</a></li>
+                        <li><a href="#botanas">Botanas</a></li>
+                        <li><a href="#refrescos">Refrescos</a></li>
+                    </ul>
+                </li>
+                </div>
+                <li class="dropdown">
+                    <a href="#">Contactos</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">27746991</a></li>
+                        <li><a href="#">95252067</a></li>
+                        <li><a href="#">97455246</a></li>
+                    </ul>
+                </li>
+                <li><a href="#galeria">Nuestros Productos</a></li>
+            <li><a href="#foot">Foot</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <!-- Carrusel de imágenes -->
+    <section>
+        <div class="header-carousel">
+            <div class="carousel-container">
+                <!-- Slide 1 -->
+                <div class="carousel-slide">
+                    <img src="/IMG/prueba foto.png" alt="Imagen 1">
+                    <div class="carousel-text">
+                        <h1>Tienditas las Marcelas</h1>
+                        <p>Las mejores carnes de la zona.</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <img src="/IMG/prueba foto2.png" alt="Imagen 2">
+                    <div class="carousel-text">
+                        <h1>Tienditas las Marcelas</h1>
+                        <p>El rinconcito de los precios bajos.</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                    <img src="/IMG/prueba foto3.png" alt="Imagen 3">
+                    <div class="carousel-text">
+                        <h1>Tienditas las Marcelas</h1>
+                        <p>Donde encontrarás los mejores precios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de categorías -->
+    <section class="categorias">
+        <div class="categoria" id="carne" data-categoria="carne">
+            <img src="/IMG/carne.png" alt="Carne">
+            <h3>Carne</h3>
+            <p>Calidad que se siente en cada bocado.</p>
+            <div class="productos" id="carne-productos" style="display: none;"></div>
+        </div>
+        <div class="categoria" id="verduras" data-categoria="frutas">
+            <img src="/IMG/vegetales.png" alt="Frutas y Verduras">
+            <h3>Frutas y Verduras</h3>
+            <p>Vegetales que te nutren, colores que te inspiran.</p>
+            <div class="productos" id="frutas-productos" style="display: none;"></div>
+        </div>
+        <div class="categoria" id="botanas" data-categoria="botanas">
+            <img src="/IMG/botana.png" alt="Botanas">
+            <h3>Botanas</h3>
+            <p>Sabor que te acompaña en cada pausa.</p>
+            <div class="productos" id="botanas-productos" style="display: none;"></div>
+        </div>
+        <div class="categoria" id="refrescos" data-categoria="refresco">
+            <img src="/IMG/refresco.png" alt="Refresco">
+            <h3>Refresco</h3>
+            <p>El sabor que despierta tus sentidos.</p>
+            <div class="productos" id="refresco-productos" style="display: none;"></div>
+        </div>
+    </section>
+
+    <!-- Galería de productos -->
+     <!-- Galería -->
+     <section id="galeria">
+        <h2>NUESTROS PRODUCTOS</h2>
+        <div class="gallery">
+            <!-- Galería de imágenes aquí -->
+            <img src="/IMG/Nestle.jpeg" alt="Nestle" class="gallery-item">
+            <img src="/IMG/avena.jpeg" alt="Avena" class="gallery-item">
+            <img src="/IMG/cereal.jpeg" alt="Cereal" class="gallery-item">
+            <img src="/IMG/mayonesa.jpeg" alt="Mayonesa" class="gallery-item">
+            <img src="/IMG/ketchup.jpeg" alt="Ketchup" class="gallery-item">
+            <img src="/IMG/mostaza.jpeg" alt="Mostaza" class="gallery-item">
+            <img src="/IMG/7up.jpeg" alt="7up" class="gallery-item">
+            <img src="/IMG/fantas.jpeg" alt="Fanta" class="gallery-item">
+            <img src="/IMG/cocacola.jpeg" alt="Coca Cola" class="gallery-item">
+            <img src="/IMG/jugo.jpeg" alt="Jugo" class="gallery-item">
+            <img src="/IMG/yogurt.jpeg" alt="Yogurt" class="gallery-item">
+            <img src="/IMG/lechecondensada.jpeg" alt="Leche Condensada" class="gallery-item">
+
+
+
+    </section>
+
+<!-- Botones de "Ver más" y "Ver menos" -->
+<button id="showMoreBtn">Mostrar más</button>
+<button id="showLessBtn" style="display: none;">Mostrar menos</button>
+ 
+<!-- Modal para la visualización de imágenes más grandes -->
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+    <!-- Footer -->
+    <section id="foot">
+        <div class="foot">
+    <footer class="footer">
+        <div class="footer-content">
+            <p><strong>Colonia:</strong> La Independencia</p>
+            <p><strong>Horarios de Atención:</strong> Lunes a Domingo, 9:00 AM - 6:00 PM</p>
+            <p>© 2024. Todos los derechos reservados.</p>
+            <p>Creado por <a href="https://www.instagram.com/marcelaa.nicoleee/" target="_blank">Marcela Velasquez</a></p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
